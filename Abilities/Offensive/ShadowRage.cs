@@ -1,6 +1,6 @@
 namespace MagicDestroyers.Abilities.Offensive;
 
-public class ShadowRage : Ability
+public class ShadowRage : OffensiveAbility
 {
     
 }

@@ -1,6 +1,6 @@
 namespace MagicDestroyers.Abilities.Defensive;
 
-public class Meditation : Ability
+public class Meditation : DefensiveAbility
 {
     
 }

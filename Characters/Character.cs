@@ -1,4 +1,7 @@
+using System.Runtime.InteropServices.JavaScript;
 using MagicDestroyers.Abilities;
+using MagicDestroyers.Abilities.Defensive;
+using MagicDestroyers.Abilities.Offensive;
 using MagicDestroyers.Equipment.Armors;
 using MagicDestroyers.Equipment.Weapons;
 using static MagicDestroyers.DefaultValues;
@@ -12,18 +15,19 @@ public abstract class Character
         Name = "Character" + new Random().Next(1, 101).ToString();
         Weight = new Random().Next(80, 120);
         Height = new Random().Next(150, 210);
+        Health = DEFAULT_HEALTH;
         Weapon = WeaponFactory.CreateWeapon(this);
-        Armor = null; //new Armor(); // TODO ArmorFactory
-        Ability = null; // new Ability(); // TODO AbilityFactory
+        Armor = ArmorFactory.CreateArmor(this);
+        AbilitiesFactory.CreateAbilitiesForCharacter(this);
     }
-    public Character(Weapon weapon, Armor armor, Ability ability, string name, int height, int weight, int health = DEFAULT_HEALTH)
+    public Character(Weapon weapon, Armor armor, string name, int height, int weight, int health = DEFAULT_HEALTH)
     {
         Name = name;
         Weight = weight;
         Height = height;
         Weapon = weapon;
         Armor = armor;
-        Ability = ability;
+        Health = health;
     }
 
     public string Name { get; set; }
@@ -53,7 +57,8 @@ public abstract class Character
         set;
     } 
     public Armor Armor { get; set; }
-    public Ability Ability { get; set; }
+    public List<OffensiveAbility> OffensiveAbilities { get; } = new List<OffensiveAbility>();
+    public DefensiveAbility? DefensiveAbility { get; set; }
     public void Greetings(Character character)
     {
         Console.WriteLine($"Hello {character.Name}! I am {this.Name}, and I am ready for the adventure!");

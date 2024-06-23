@@ -1,6 +1,6 @@
 namespace MagicDestroyers.Abilities.Offensive;
 
-public class ArcaneWrath : Ability
+public class ArcaneWrath : OffensiveAbility
 {
     
 }

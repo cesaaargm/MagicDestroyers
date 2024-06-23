@@ -1,6 +1,6 @@
 namespace MagicDestroyers.Abilities.Offensive;
 
-public class PurifySoul : Ability
+public class PurifySoul : OffensiveAbility
 {
     
 }

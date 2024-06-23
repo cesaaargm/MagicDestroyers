@@ -1,6 +1,6 @@
 namespace MagicDestroyers.Abilities.Offensive;
 
-public class Raze : OffensiveAbility
+public abstract class OffensiveAbility : Ability
 {
     
 }

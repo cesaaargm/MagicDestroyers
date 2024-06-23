@@ -1,6 +1,6 @@
 namespace MagicDestroyers.Abilities.Offensive;
 
-public class Starburst : Ability
+public class Starburst : OffensiveAbility
 {
     
 }

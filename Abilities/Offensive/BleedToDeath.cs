@@ -1,6 +1,6 @@
 namespace MagicDestroyers.Abilities.Offensive;
 
-public class BleedToDeath : Ability
+public class BleedToDeath : OffensiveAbility
 {
     
 }

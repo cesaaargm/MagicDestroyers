@@ -1,6 +1,6 @@
 namespace MagicDestroyers.Abilities.Defensive;
 
-public class SkinHarden : Ability
+public class SkinHarden : DefensiveAbility
 {
     
 }

@@ -9,14 +9,16 @@ namespace MagicDestroyers.Characters.Spellcasters;
 
 public class Mage : Character, ICalculator, ISpellcaster
 {
-    public Mage()
+    public Mage() : base()
     {
         Spell = new Spell();
         Mana = DEFAULT_MANA;
     }
-    public Mage(Weapon weapon, Armor armor, Ability ability, string name, int height, int weight, int health) 
-        : base(weapon, armor, ability, name, height, weight, health)
+    public Mage(Weapon weapon, Armor armor, string name, int height, int weight, int health) 
+        : base(weapon, armor, name, height, weight, health)
     {
+        Spell = new Spell();
+        Mana = DEFAULT_MANA;
     }
 
     public Spell Spell {
@@ -39,6 +41,7 @@ public class Mage : Character, ICalculator, ISpellcaster
     public void CastSpell(Warrior warrior)
     {
         warrior.Health -= Spell.Damage;
+        Console.WriteLine("Mage: The spirits cast this spell on you, filthy scum! Adaba Kebab ra");
         Mana -= Spell.ManaCost;
     }
     public override string ToString()

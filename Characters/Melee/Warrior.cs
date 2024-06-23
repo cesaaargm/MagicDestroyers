@@ -7,8 +7,8 @@ namespace MagicDestroyers.Characters.Melee;
 
 public class Warrior : Character, ICalculator
 {
-    public Warrior(Weapon weapon, Armor armor, Ability ability, string name, int height, int weight) 
-        : base(weapon, armor, ability, name, height, weight)
+    public Warrior(Weapon weapon, Armor armor, string name, int height, int weight) 
+        : base(weapon, armor, name, height, weight)
     {
         Console.WriteLine($"Created a warrior.");
     }

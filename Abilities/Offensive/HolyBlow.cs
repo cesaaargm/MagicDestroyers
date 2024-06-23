@@ -1,6 +1,6 @@
 namespace MagicDestroyers.Abilities.Offensive;
 
-public class HolyBlow : Ability
+public class HolyBlow : OffensiveAbility
 {
     
 }

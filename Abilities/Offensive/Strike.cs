@@ -1,6 +1,6 @@
 namespace MagicDestroyers.Abilities.Offensive;
 
-public class Strike : Ability
+public class Strike : OffensiveAbility
 {
     
 }

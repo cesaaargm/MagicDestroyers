@@ -1,6 +1,6 @@
 namespace MagicDestroyers.Abilities.Defensive;
 
-public class Survival : DefensiveAbility
+public class DefensiveAbility : Ability
 {
     
 }

@@ -4,7 +4,8 @@ using MagicDestroyers.Equipment.Weapons;
 
 namespace MagicDestroyers.Characters.Melee;
 
-public class Knight(Weapon weapon, Armor armor, Ability ability, string name, int height, int weight) : Character(weapon, armor, ability, name, height, weight)
+public class Knight(Weapon weapon, Armor armor, string name, int height, int weight) 
+    : Character(weapon, armor, name, height, weight)
 {
     
 }

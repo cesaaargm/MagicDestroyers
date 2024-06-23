@@ -1,6 +1,6 @@
 namespace MagicDestroyers.Abilities.Offensive;
 
-public class Moonfire : Ability
+public class Moonfire : OffensiveAbility
 {
     
 }

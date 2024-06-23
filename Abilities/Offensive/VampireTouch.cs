@@ -1,6 +1,6 @@
 namespace MagicDestroyers.Abilities.Offensive;
 
-public class VampireTouch : Ability
+public class VampireTouch : OffensiveAbility
 {
     
 }

@@ -1,6 +1,6 @@
 namespace MagicDestroyers.Abilities.Defensive;
 
-public class RighteousWings : Ability
+public class RighteousWings : DefensiveAbility
 {
     
 }

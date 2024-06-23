@@ -4,7 +4,7 @@ using MagicDestroyers.Characters.Spellcasters;
 
 namespace MagicDestroyers.Equipment.Weapons;
 
-public class WeaponFactory
+public static class WeaponFactory
 {
     public static Weapon CreateWeapon(Character character)
     {

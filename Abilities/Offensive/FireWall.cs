@@ -1,6 +1,6 @@
 namespace MagicDestroyers.Abilities.Offensive;
 
-public class FireWall : Ability
+public class FireWall : OffensiveAbility
 {
     
 }
